@@ -16,7 +16,7 @@ node {
     withSonarQubeEnv {
      sh label: '', script: './gradlew sonarqube'
    }
-    waitForQualityGate true
+    waitForQualityGate false
    }
     stage('Despliegue Dllo') {
      
